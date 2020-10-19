@@ -50,8 +50,8 @@ main:
 	INFOTXT	initTmpRastPort
 	jsr	initTmpRastPort	; init rastport with bitmap, and setup JAM1, and PEN colors.
 
-;	INFOTXT	clearBitmap
-;	jsr	clearBitmap		; Try dump some stuff into bitmap, not so system frendly way.
+	INFOTXT	clearBitmap
+	jsr	clearBitmap		; Try to dump some stuff into bitmap, not so system frendly way.
 
 	INFOTXT	drawSomeGfx	; try to draw something into tmp RastPort
 	jsr	drawSomeGfx
