@@ -190,9 +190,10 @@ initTmpRastPort
 	rts
 
 freeBitmap
-	move.l	windowBitmap,A0
 	move.l	graphicsBase,a6
 	jsr		_LVOWaitBlit(A6)
+
+	move.l	windowBitmap,A0
 	jsr		_LVOFreeBitMap(A6)
 	rts
 
