@@ -199,15 +199,19 @@ freeBitmap
 
 blitBitmapIntoWindow
 	move.l	windowBitmap,A0
-	move.l	#0,D0	; src X,y
-	move.l	#0,D1
-	move.l	window,a1
-	move.l	wd_RPort(a1),a1	; get RastPort
-	move.l	#0,D2	; des x,y
+	move.l	window,a2
+
+	move.l	#0,D2	; dest X,Y default
 	move.l	#0,D3
-	move.l	#640,D4	; width,height
-	move.l	#256,D5
-	move.l	#0,D6	; minterm
+
+	move.l	#0,D0	; src x,y
+	move.l	#0,D1
+	move.l	wd_RPort(a2),a1	; get RastPort
+	move.b	wd_BorderLeft(a2),D2	; des x,y
+	move.b	wd_BorderTop(a2),D3
+	move.l	#320,D4	; width,height
+	move.l	#200,D5
+	move.l	#$C0,D6	; minterm
 	move.l	graphicsBase,a6
 	jsr		_LVOBltBitMapRastPort(A6)
 	rts
