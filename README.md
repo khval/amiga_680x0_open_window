@@ -10,4 +10,4 @@ Use the code as you like no conditions attached.
 
 # Compiling.
 
-I compile with a cross compiler, so edit the makefile, change command line so used normal on if your on Amiga1200/500, make sure the compiler your using is not too old.
+I compile with a cross compiler, so edit the makefile, change command tool so it uses a normal one if your on a Amiga1200/500, make sure the compiler you are using is not too old.
