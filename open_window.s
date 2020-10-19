@@ -128,16 +128,16 @@ drawSomeGfx
 ;	move.l	wd_RPort(a1),a1	; get RastPort
 
 	lea.l	tmpRastPort,a1
-	move.l	#0,d0
-	move.l	#0,d1
+	move.w	#50,d0
+	move.w	#50,d1
 	jsr		_LVOMove(a6)
 
 ;	move.l	window,A1
 ;	move.l	wd_RPort(a1),a1	; get RastPort
 
 	lea.l	tmpRastPort,a1
-	move.l	#100,d0
-	move.l	#100,d1
+	move.w	#100,d0
+	move.w	#150,d1
 	jsr		_LVODraw(a6)
 
 	rts
