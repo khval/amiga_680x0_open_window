@@ -7,3 +7,7 @@ Most of Amiga tutorials programming the Amiga in assembler focus on not using th
 So now there is a need to look for solutions that try to undo some of that bad practice, one way is write good examples of how to code system friendly, in assembler.
 
 Use the code as you like no conditions attached.
+
+# Compiling.
+
+I compile with a cross compiler, so edit the makefile, change command line so used normal on if your on Amiga1200/500, make sure the compiler your using is not too old.
