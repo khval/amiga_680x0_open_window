@@ -295,5 +295,5 @@ txtdrawSomeGfx
 		dc.b "drawSomeGfx",0
 
 tmpRastPort
-	ds.b rp_SIZEOF
+	dcb.b rp_SIZEOF,0
 
